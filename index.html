@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>  
+  <section class="movie">
+    <div class="container">
+      <img style="margin-left: 25%;" src="./img/pokemon_logo 1.png" width="610" height="225">
+      <i class="fas fa-heart header-heart" id="headerHeart"></i>
+      <h1 class="movie__title">Pokemons</h1>
+      <form class="form" id="form">
+        <input class="movie__search" placeholder="search..." id="search_movie" type="text" name="seach_movie">
+        <select class="movie__genre" name="select" id="select">
+          <option value="All">All</option>
+        </select>
+        <select class="movie__genre" id="sorting">
+          <option value="a-z">A-z</option>
+          <option value="z-a">Z-a</option>
+          <option value="new-old">New-Old</option>
+          <option value="old-new">Old-New</option>
+        </select>
+        <button class="movie__btn" type="submit">Search</button>
+      </form>
+      
+      <ul class="movie__list">
+        <li class="movie__item">
+          <img class="movie__img" src="http://picsum.photos/150/200" alt="img" width="150" height="200">
+          <h2 class="movie__item-title">Shazam</h2>
+          <time class="movie__list-time" datetime="2020-15-20">2020-15-20</time>
+          <p class=""></p>
+        </li>
+      </ul>
+    </div>
+    <aside class="aside" id="aside"><i class="fas fa-chevron-right" id="arrow"></i></aside>
+  </section>
+  <script src="./pokemons.js"></script>
+  <script src="./utils.js"></script>
+  <script src="./seacrh.js"></script>
+</body>
+</html>
